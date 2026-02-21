@@ -1,0 +1,153 @@
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  z-index: 1200;
+}
+
+.menu-icon {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ... Existing styles for .hamburger-menu, .menu-icon, .bar, and .menu ... */
+
+.menu {
+  /* Add styles to create a horizontal menu */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.3s, transform 0.3s;
+  
+}
+
+
+
+/* ... Styles for .open .menu, .menu li:hover, and animations ... */
+
+
+.menu li {
+  display: inline-block; /* Change from 'display: flex' to 'display: inline-block' */
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.open .menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu li {
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu li:hover {
+  background-color: #555;
+}
+
+
+/* Add these styles at the end of HamburgerMenu.css */
+
+.menu-entering,
+.menu-exiting,
+.menu-exited {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.menu-entered {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+  .hamburger-menu {
+    display: flex; /* Uncomment this line */
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 34px;
+    right: 30px;
+    z-index: 1200;
+  }
+
+  .menu {
+    /* Add styles to create a horizontal menu */
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Add styles for other elements as needed */
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .hamburger-menu {
+    display: flex; /* Uncomment this line */
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right:30px;
+    z-index: 1200;
+  }
+
+  .menu {
+    /* Add styles to create a horizontal menu */
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+}

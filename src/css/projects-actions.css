@@ -1,0 +1,71 @@
+.action-card {
+  cursor: pointer;
+}
+
+.action-card .portfolio-card-overlay {
+  display: none;
+}
+
+.project-actions-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(19, 20, 30, 0.72), rgba(56, 42, 112, 0.72));
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+  z-index: 2;
+}
+
+.action-card:hover .project-actions-overlay,
+.action-card.show-actions .project-actions-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-action-btn {
+  min-width: 112px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.project-action-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+
+.project-action-btn-secondary {
+  background: rgba(101, 84, 186, 0.68);
+  border-color: rgba(205, 199, 255, 0.86);
+}
+
+.project-action-btn-secondary:hover {
+  background: rgba(114, 93, 212, 0.8);
+}
+
+@media (max-width: 767.98px) {
+  .project-actions-overlay {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .project-action-btn {
+    min-width: 98px;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,32 @@
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-caption .about-text {
+  text-align: left;
+  line-height: 1.75;
+  max-width: 740px;
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .about-caption .about-text {
+    text-align: left;
+  }
+}
