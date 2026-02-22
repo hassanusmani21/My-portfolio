@@ -74,7 +74,7 @@ export function Header() {
               And I'm a <span className="typing"></span>
           </div>
           {/* <p className="header-subtitle">FRONTEND WEB DESIGNER</p> */}
-          <button className="btn btn-primary">Hire Me</button>
+          <a href="#contact" className="btn btn-primary">Hire Me</a>
         </div>
       </header>
     </>

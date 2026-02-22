@@ -1,9 +1,12 @@
+.skill-section {
+  background-color: #e8ecfb;
+}
 
-.container {
+.skill-section .container {
   margin: 0 auto;
 }
 
-.card {
+.skill-section .card {
   position: relative;
   width: 200px;
   height: 300px;
@@ -16,7 +19,7 @@
   /* box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5); */
 }
 
-.face {
+.skill-section .face {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,27 +30,27 @@
   align-items: center;
 }
 
-.face.back {
+.skill-section .face.back {
   box-sizing: border-box;
   padding: 20px;
 }
 
-.face.back b {
+.skill-section .face.back b {
   margin: 0;
   padding: 0;
 }
 
-.face.back .desc {
+.skill-section .face.back .desc {
   background-color: #eee;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.face.front {
+.skill-section .face.front {
   transition: 0.5s;
 }
 
-.face.front b {
+.skill-section .face.front b {
   margin: 0;
   padding: 0;
   font-size: 3em;
@@ -57,25 +60,25 @@
   z-index: 10;
 }
 
-.card:hover .face.front {
+.skill-section .card:hover .face.front {
   height: 60px;
 }
 
-.card:hover .face.front b {
+.skill-section .card:hover .face.front b {
   font-size: 2em;
 }
 
-.face.front {
+.skill-section .face.front {
   background-color: white;
   border-radius: 15px;
 }
 
-.whole-card{
+.skill-section .whole-card{
   display: flex;
   flex-wrap: wrap;
 }
 
-.skill-name{
+.skill-section .skill-name{
   text-align: center;
   margin-bottom: 25px;
 }

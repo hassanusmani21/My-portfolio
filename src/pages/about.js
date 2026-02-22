@@ -6,7 +6,7 @@ import '../css/about-section.css';
 export function Home() {
   return (
     <div>
-      <section className="section pt-0 about-section" id="about">
+      <section className="section about-section" id="about">
         <div className="container">
           <div className="about">
             <div className="about-img-holder">

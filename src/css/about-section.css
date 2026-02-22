@@ -1,3 +1,7 @@
+.about-section {
+  background-color: #e8ecfb;
+}
+
 .about-section .about {
   align-items: stretch;
   gap: clamp(24px, 4vw, 56px);
@@ -56,16 +60,10 @@
 }
 
 @media (max-width: 991.98px) {
-  .about-section .about-img-holder {
-    min-width: clamp(240px, 42vw, 320px);
-    max-width: clamp(240px, 42vw, 320px);
-  }
-}
-
-@media (max-width: 767.98px) {
   .about-section .about {
+    flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     gap: 20px;
   }
 
@@ -77,10 +75,29 @@
   }
 
   .about-section .about-caption {
-    width: 100%;
+    width: min(100%, 760px);
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-section .about-caption .about-text {
+    margin: 0 auto 1.25rem;
   }
 
   .about-section .about-caption .btn {
-    align-self: flex-start;
+    align-self: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-section .about {
+    gap: 20px;
+  }
+
+  .about-section .about-img-holder {
+    width: min(100%, 320px);
+    min-width: 0;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }

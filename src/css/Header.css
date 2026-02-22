@@ -22,6 +22,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -140px;
+    background-color: #e8ecfb;
   }
   
   .header .overlay {
@@ -30,8 +31,8 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
-    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(95, 112, 188, 0.42) 0%, rgba(178, 188, 227, 0.34) 56%, rgba(232, 236, 251, 0.98) 88%, #e8ecfb 100%);
+    background-image: linear-gradient(180deg, rgba(95, 112, 188, 0.42) 0%, rgba(178, 188, 227, 0.34) 56%, rgba(232, 236, 251, 0.98) 88%, #e8ecfb 100%);
   }
   
   .header .header-content {
@@ -120,8 +121,22 @@ html {
   @media (max-width: 991.98px) {
     .header {
       background-size: cover;
+      background-position: center top;
     }
+
+    .header .overlay {
+      background-image: -webkit-linear-gradient(top, rgba(92, 108, 184, 0.44) 0%, rgba(167, 178, 220, 0.35) 58%, rgba(232, 236, 251, 0.98) 90%, #e8ecfb 100%);
+      background-image: linear-gradient(180deg, rgba(92, 108, 184, 0.44) 0%, rgba(167, 178, 220, 0.35) 58%, rgba(232, 236, 251, 0.98) 90%, #e8ecfb 100%);
+    }
+
     .header-content {
       padding-left: calc(100% / 5) !important;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .header {
+      min-height: 520px;
+      background-position: 50% 0;
     }
   }

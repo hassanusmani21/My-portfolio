@@ -1,38 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import moviesImage from '../assets/movies.png';
-import ecommerceImage from '../assets/ecommerce.png';
-import periodImage from '../assets/perioid.png';
+import { projectCards } from '../data/projectsData';
 import '../css/projects-actions.css';
 
 export function Projects(){
     const [activeCard, setActiveCard] = useState(null);
     const cardsRef = useRef({});
-    const projectCards = [
-      {
-        id: 'movies',
-        title: 'Moviesflix',
-        subtitle: 'Category: Web App',
-        demoUrl: 'https://moviesflixapp.netlify.app/',
-        codeUrl: 'https://github.com/hassanusmani21/Moviesflix',
-        image: moviesImage,
-      },
-      {
-        id: 'ecommerce',
-        title: 'E-commerce',
-        subtitle: 'Category: Web App',
-        demoUrl: 'https://willowy-naiad-9e85dc.netlify.app/',
-        codeUrl: 'https://github.com/hassanusmani21/E-commerce',
-        image: ecommerceImage,
-      },
-      {
-        id: 'period-tracker',
-        title: 'Period Tracker',
-        subtitle: 'Category: Web App',
-        demoUrl: 'https://app.netlify.com/projects/splendorous-genie-f22c62/overview',
-        codeUrl: 'https://github.com/hassanusmani21/A-women-s-wellness-and-period-tracker',
-        image: periodImage,
-      },
-    ];
 
     useEffect(() => {
       const handleOutsideClick = (event) => {
@@ -89,6 +61,13 @@ export function Projects(){
                           onClick={handleActionClick}
                         >
                           View Code
+                        </a>
+                        <a
+                          href={`/projects/${card.slug}`}
+                          className="project-action-btn project-action-btn-tertiary"
+                          onClick={handleActionClick}
+                        >
+                          Case Study
                         </a>
                       </div>
                       <span className="portfolio-card-overlay">
