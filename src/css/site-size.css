@@ -1,0 +1,13 @@
+/* Desktop-only visual scale so 100% browser zoom looks like ~70%. */
+@media (min-width: 992px) {
+  html {
+    zoom: 80%;
+  }
+}
+
+/* Keep tablet/phone at natural scale. */
+@media (max-width: 991.98px) {
+  html {
+    zoom: 100%;
+  }
+}

@@ -8,6 +8,7 @@ import {ContactForm} from './pages/contact'
 import {Footer} from './pages/footer'
 import { getProjectBySlug } from './data/projectsData';
 import { ProjectDetailPage } from './pages/projectDetail';
+import './css/site-size.css';
 
 const getProjectSlugFromPath = (pathname) => {
   const normalizedPath = pathname.replace(/\/+$/, '') || '/';
