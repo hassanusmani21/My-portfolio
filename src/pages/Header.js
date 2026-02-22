@@ -17,7 +17,7 @@ export function Header() {
   };
   useEffect(() => {
     const options = {
-      strings: ["FrontEnd Developer", "Dreamer"],
+      strings: ["Frontend Developer", "Dreamer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -67,7 +67,7 @@ export function Header() {
         <div className="overlay"></div>
         <div className="header-content container">
           <h1 className="header-title">
-            <span className="up">HI!</span>
+            <span className="up">Hi!</span>
             <span className="down">I'm Hassan Usmani</span>
           </h1>
           <div className="content">

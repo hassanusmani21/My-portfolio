@@ -10,7 +10,7 @@ export function Skill(){
   return (
 <section className="section skill-section" id="skills">
   <div className="container">
-    <h1 className='skill-name'>Skill's</h1>
+    <h1 className='skill-name'>Skills</h1>
     <div className='whole-card'>
       <div className="card">
         <div className="face back">

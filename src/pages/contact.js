@@ -240,7 +240,7 @@ export function ContactForm(){
   return (
     <section className="section contact-section" id="contact">
       <div className="container text-center">
-        <p className="section-subtitle">How can you communicate?</p>
+        <p className="section-subtitle">How can you contact me?</p>
         <h6 className="section-title mb-5">Contact Me</h6>
         <form
           onSubmit={handleSubmit}

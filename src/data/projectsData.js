@@ -7,7 +7,7 @@ export const projectCards = [
     id: 'moviesflix',
     slug: 'moviesflix',
     title: 'Moviesflix',
-    subtitle: 'Category: Web App',
+    subtitle: 'Category: Web Application',
     summary:
       'A responsive movie discovery app where users can browse trending titles, search quickly, and review key movie details in a clean interface.',
     problem:
@@ -30,7 +30,7 @@ export const projectCards = [
     id: 'ecommerce',
     slug: 'ecommerce',
     title: 'E-commerce',
-    subtitle: 'Category: Web App',
+    subtitle: 'Category: Web Application',
     summary:
       'A storefront-style frontend focused on product listing, product detail views, and user-friendly cart interactions with responsive layouts.',
     problem:
@@ -53,7 +53,7 @@ export const projectCards = [
     id: 'period-tracker',
     slug: 'period-tracker',
     title: 'Period Tracker',
-    subtitle: 'Category: Web App',
+    subtitle: 'Category: Web Application',
     summary:
       'A wellness-focused tracker to help users log cycles, monitor key dates, and follow a simple, privacy-friendly daily experience.',
     problem:

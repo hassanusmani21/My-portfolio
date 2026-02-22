@@ -17,7 +17,7 @@ export function Home() {
               />
             </div>
             <div className="about-caption">
-              <p className="section-subtitle">Who Am I ?</p>
+              <p className="section-subtitle">Who am I?</p>
               <h2 className="section-title mb-3">About Me</h2>
               <p className="about-text">
                 I am an aspiring Frontend Developer with a strong foundation in HTML, CSS,
