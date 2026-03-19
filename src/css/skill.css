@@ -11,12 +11,10 @@
   width: 200px;
   height: 300px;
   margin: 0 auto;
-  /* background-image: url(../assets/html-removebg-preview.png); */
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 20px;
   border-radius: 15px;
-  /* box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5); */
 }
 
 .skill-section .face {
@@ -35,17 +33,6 @@
   padding: 20px;
 }
 
-.skill-section .face.back b {
-  margin: 0;
-  padding: 0;
-}
-
-.skill-section .face.back .desc {
-  background-color: #eee;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .skill-section .face.front {
   transition: 0.5s;
 }
@@ -56,7 +43,6 @@
   font-size: 3em;
   color: black;
   transition: 0.5s;
-  /* text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   z-index: 10;
 }
 

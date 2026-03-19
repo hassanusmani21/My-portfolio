@@ -24,9 +24,3 @@ canvas {
   max-width: 740px;
   margin: 0 auto 1rem;
 }
-
-@media (max-width: 767.98px) {
-  .about-caption .about-text {
-    text-align: left;
-  }
-}

@@ -1,11 +1,10 @@
-
 import './App.css';
-import {Home} from './pages/about';
+import { Home } from './pages/about';
 import { Header } from './pages/Header';
-import {Skill} from './pages/skill'
+import { Skill } from './pages/skill';
 import { Projects } from './pages/projects';
-import {ContactForm} from './pages/contact'
-import {Footer} from './pages/footer'
+import { ContactForm } from './pages/contact';
+import { Footer } from './pages/footer';
 import { getProjectBySlug } from './data/projectsData';
 import { ProjectDetailPage } from './pages/projectDetail';
 import './css/site-size.css';
@@ -28,19 +27,19 @@ function App() {
     return (
       <>
         <ProjectDetailPage project={selectedProject} />
-        <Footer/>
+        <Footer />
       </>
     );
   }
 
   return (
     <>
-    <Header/>
-    <Home/>
-    <Skill/>
-    <Projects/>
-    <ContactForm/>
-    <Footer/>
+      <Header />
+      <Home />
+      <Skill />
+      <Projects />
+      <ContactForm />
+      <Footer />
     </>
   );
 }
