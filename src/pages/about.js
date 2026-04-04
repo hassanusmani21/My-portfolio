@@ -30,7 +30,7 @@ export function Home() {
               applications while contributing to real-world projects and innovative teams.
             </p>
             <a
-              href="https://drive.google.com/file/d/1SrE9H9ke-NI5-14uqbGyHBj0J56-wmdo/view?usp=sharing"
+              href="https://drive.google.com/file/d/1L1H2JhERQvnSnCfJ1v50W_3Yqex-1xGA/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-rounded btn btn-outline-primary mt-4"
