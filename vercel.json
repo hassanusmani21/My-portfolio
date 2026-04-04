@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(?!googled82fccc856bc72f1\.html|googlebd82fccc856bc72f1\.html)(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
